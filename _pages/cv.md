@@ -72,6 +72,23 @@ redirect_from:
 
 <div style="display:flex;">
   <div style="flex:0.5; padding-right:5%">
+    <img src="{{ site.url }}/images/resume/swahili.jpg" style="align:left; border: 1px solid #d3d3d3; border-radius: 11px; padding: 4px">
+  </div>
+  <div style="flex:4;">
+    <p style="margin:0px">
+      <b style="font-size: 130%;">Swahili Developers</b>
+      <span style="float:right; font-size:80%; color:#7a7a7a;">Jan 2021 - Present</span>
+    </p>
+    Founder
+    <div style="color:#7a7a7a">
+      Swahili Developer is a mentorship and tutoring program  focused on empowering university students and young professionals in Tanzania with the skills and knowledge necessary to thrive in the tech industry. 
+    </div>
+  </div>
+</div>
+<hr style="height:1em; margin:0em; visibility:hidden;" />
+
+<div style="display:flex;">
+  <div style="flex:0.5; padding-right:5%">
     <img src="{{ site.url }}/images/resume/poralg.png" style="align:left; border: 1px solid #d3d3d3; border-radius: 11px; padding: 4px">
   </div>
   <div style="flex:4;">
