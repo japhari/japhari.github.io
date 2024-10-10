@@ -135,14 +135,53 @@ redirect_from:
 
 # Projects 🚀
 
-- **Government of Tanzania Health Management Information System (GOT-HOMIS)** - Played a pivotal role in developing a centralized health data management system for the Tanzanian government.
-- **Zanzibar Electronic Medical Record System (ZEMR)** - Designed and developed a system for managing health records across Zanzibar's health facilities.
-- **Facility Financial Account and Reporting System (FFARS)** - A financial system that tracks budgets, payments, and financial reporting for local government authorities.
-- **Wadau Portal** - A web-based platform to monitor and govern Tanzania's development partners and their projects.
-- **Annual School Census (ASC)** - Developed a system to collect and manage data for Pre-Primary, Primary, and Secondary schools.
-- **Madeni MIS** - System for automating and managing staff claims and debts across Tanzanian government departments.
-- **National e-Procurement System (NeST)** - Led the design and implementation of a platform to digitalize procurement processes across Tanzania.
-- **Medical Stores Department Gateway** - Developed a payment integration platform that connects MSD with financial institutions for real-time transactions.
+- **Government of Tanzania Health Management Information System (GOT-HOMIS)**  
+  Played a critical role in the design and development of multiple versions (2, 2.5, 3, 4.0) of GOT-HOMIS, a centralized health data management system aimed at improving healthcare services across Tanzania. Responsibilities included crafting comprehensive System Requirement Specification Documents (SRS) to define functional and non-functional requirements, as well as creating System Design Documents (SDD) that detailed system architecture, database schemas, and data flow. Led the implementation process, collaborating with multidisciplinary teams to ensure seamless integration with existing healthcare infrastructure. This system has greatly enhanced data-driven decision-making, resource allocation, and patient care across the country.
+
+- **Zanzibar Electronic Medical Record System (ZEMR)**  
+  Designed and implemented a centralized Electronic Medical Record (EMR) system to streamline patient data management across Zanzibar’s health facilities. The system improved the accuracy, accessibility, and security of patient records, facilitating better healthcare delivery and administrative efficiency.
+
+- **Facility Financial Account and Reporting System (FFARS)**  
+  Developed both web and mobile applications for local government authorities to manage budgets, grants, and own-source revenue. The system offers real-time financial reporting and budget control, supporting local facilities in efficient financial management. It integrates directly with bank systems for seamless reconciliation and ensures financial transparency for stakeholders at multiple levels, including sector ministries and local government authorities.
+
+- **Wadau Portal (Implementing Partners Management Portal)**  
+  Created a web-based platform to help the Tanzanian government track and govern information about development partners and their research projects. This system serves as a central hub for monitoring, evaluation, and governance, improving transparency and accountability for projects in partnership with external organizations.
+
+- **Annual School Census (ASC)**  
+  Developed a robust system used to collect and manage educational data from Pre-Primary, Primary, Secondary, Adult, and Non-Formal Education institutions. The system streamlines the collection of data via school-level questionnaires and plays a pivotal role in education planning, resource distribution, and policy-making.
+
+- **Madeni MIS**  
+  Designed and developed an automated system for managing staff claims and non-salary debts across Tanzanian government departments. The system digitizes the entire claims process, ensuring transparency and accountability at all levels of approval. It significantly reduced the delays and inefficiencies associated with manual claim handling.
+
+- **Muungano Gateway**  
+  Developed a robust communication bus, serving as an interoperability layer for various electronic information systems in Tanzania. Muungano Gateway allows for seamless data exchange and integration across different government and institutional systems, improving interoperability and data sharing within and between public sector systems.
+
+- **Human Capital Management Information System (HCMIS)**  
+  Created and deployed an advanced Human Resource and Payroll Management system for the Tanzanian government’s public service. The system enhances human resource management efficiency by automating payroll processes and providing comprehensive employee management functionalities, used across all public service institutions.
+
+- **School Information System (SIS)**  
+  Developed a web and mobile-based platform that captures comprehensive data on student and staff populations, resources, behaviors, and performance indicators. The system supports school administrators and policymakers by offering real-time data insights and analytics for effective decision-making.
+
+- **Bank of Tanzania Health Management Information System**  
+  Designed and deployed an EMR system for the Bank of Tanzania’s dispensaries and health centers, streamlining the management of patient data and improving healthcare delivery for employees and their dependents.
+
+- **10% Management Information System (TPLMIS)**  
+  Developed an automated system to manage loans provided to women, youth, and disabled individuals. The system integrates with Tanzanian financial institutions, ensuring accurate bank account validation and transparent loan disbursement. It has increased repayment rates and strengthened accountability through the use of control numbers.
+
+- **Tanzania Electronic Investment Window (TEIW)**  
+  Designed and implemented the TEIW platform, a one-stop solution for investors seeking services from various government institutions, including the Tanzania Investment Centre (TIC), NIDA, TRA, and others. TEIW streamlines the process for acquiring permits, licenses, and approvals, significantly reducing bottlenecks and enhancing investor experience.
+
+- **Selform Management Information System**  
+  Developed a system allowing students to update academic preferences (e.g., schools, colleges, or subject combinations) following the release of final exam results. This system also manages the allocation of students to schools and colleges based on their academic choices and results, improving the overall student placement process.
+
+- **Faru Gateway**  
+  Led the development of Faru Gateway, a centralized data exchange infrastructure designed to enhance secure communication and data sharing within the Ministry of Natural Resources and Tourism. The gateway integrates with the Government Electronic Service Bus (Gov-ESB), facilitating the development of data warehouses, BI dashboards, and mobile applications to support decision-making in the natural resource and tourism sectors.
+
+- **National e-Procurement System (NeST)**  
+  Developed modules in the NeST, a comprehensive digital platform that revolutionizes public procurement in Tanzania. The system automates procurement workflows, from tendering to contract management, ensuring transparency, efficiency, and accountability. Advanced features include real-time monitoring and compliance with procurement regulations, significantly reducing fraud and errors while enhancing competitiveness in government tenders.
+
+- **Medical Stores Department (MSD) Gateway**  
+  Spearheaded the development of the MSD Gateway, an integration platform that connects MSD systems with various financial institutions, including NMB, CRDB, and others. The gateway streamlines payment processes, enabling seamless and secure financial transactions, ultimately improving the efficiency and reliability of the medical supply chain in Tanzania.
 
 # Conferences & Seminars 🌍
 
