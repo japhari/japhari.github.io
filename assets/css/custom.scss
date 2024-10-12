@@ -1,0 +1,29 @@
+.archive__item {
+  display: flex; /* Use flexbox to align the image and content side by side */
+  align-items: flex-start; /* Align items at the top */
+  margin-bottom: 30px; /* Add space between each publication */
+}
+
+.archive__item-image {
+  flex-shrink: 0; /* Ensure the image doesn't shrink */
+  margin-right: 20px; /* Add space between the image and content */
+}
+
+.archive__item-image img {
+  width: 150px; /* Set a fixed width for the thumbnail */
+  height: auto; /* Ensure the aspect ratio is maintained */
+  border-radius: 5px; /* Optional: Add rounded corners to the image */
+}
+
+.archive__item-content {
+  flex-grow: 1; /* Make the content take up the remaining space */
+}
+
+.archive__item-image img {
+  width: 150px !important; /* Set the image width to 150px */
+  height: 100px !important; /* Set the image height to 100px for uniform thumbnail size */
+  object-fit: cover; /* Ensure the image is cropped to fit the dimensions */
+  border-radius: 5px; /* Optional: Add rounded corners to the image */
+  display: block;
+  margin-bottom: 20px;
+}

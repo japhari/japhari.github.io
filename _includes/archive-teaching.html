@@ -1,0 +1,39 @@
+<div class="teaching__item">
+  <!-- Thumbnail on the left -->
+  <div class="teaching__item-thumbnail">
+    {% if post.thumbnail %}
+    <img src="{{ post.thumbnail }}" alt="{{ post.title }}" />
+    {% endif %}
+  </div>
+
+  <!-- Content on the right -->
+  <div class="teaching__item-content">
+    <h2 class="teaching__item-title">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h2>
+
+    <p class="teaching__item-date">
+      Published: {{ post.date | date: "%B %d, %Y" }}
+    </p>
+
+    <!-- Excerpt -->
+    {% if post.excerpt %}
+    <p class="teaching__item-excerpt">{{ post.excerpt }}</p>
+    {% endif %}
+
+    <!-- Links with icons -->
+    <div class="teaching__item-links">
+      {% if post.colab_url %}
+      <a href="{{ post.colab_url }}" target="_blank" class="colab-link">
+        <i class="fas fa-laptop-code"></i>
+        <!-- Google Colab Icon -->
+      </a>
+      {% endif %} {% if post.github_url %}
+      <a href="{{ post.github_url }}" target="_blank" class="github-link">
+        <i class="fab fa-github"></i>
+        <!-- GitHub Icon -->
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>

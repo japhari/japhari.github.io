@@ -1,0 +1,212 @@
+.publication__item {
+  display: flex; /* Use Flexbox for side-by-side layout */
+  align-items: flex-start; /* Align items at the top */
+  margin-bottom: 30px; /* Add space between each publication */
+}
+
+.publication__item-image {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-right: 20px; /* Add space between the image and content */
+}
+
+.publication__item-image img {
+  width: 300px !important; /* Fixed width for the image */
+  height: auto !important; /* Maintain the aspect ratio */
+  padding: 10px; /* Add padding around the image */
+  border: 1px solid #ccc; /* Add a solid border around the image */
+  display: block;
+  border-radius: 5px; /* Optional: add rounded corners for a smoother look */
+  background-color: #fff; /* Optional: Add background color for clearer padding effect */
+}
+
+.publication__item-content {
+  flex-grow: 1; /* Allow the content to take up the remaining space */
+}
+
+.publication__item-title a {
+  color: rgb(163, 36, 36); /* Custom color for the publication title */
+  text-decoration: none; /* Remove underline from title link */
+}
+
+.publication__item-title a:hover {
+  text-decoration: underline; /* Add underline on hover for accessibility */
+}
+
+.publication__item-content p a {
+  color: #016f8b; /* Custom color for "Download Paper" and "Download Slides" links */
+  margin-right: 10px; /* Add spacing between links */
+  text-decoration: none; /* Remove underline for links */
+}
+
+.publication__item-content p a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.blog__item {
+  display: flex; /* Use Flexbox for side-by-side layout */
+  align-items: flex-start; /* Align the content and thumbnail at the top */
+  margin-bottom: 30px; /* Add space between each blog post */
+}
+
+.blog__item-image {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-right: 20px; /* Add space between the image and content */
+}
+
+.blog-thumbnail {
+  width: 300px; /* Set the width of the thumbnail */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual appeal */
+}
+
+.blog__item-title {
+  font-size: 18px; /* Adjust title size */
+  color: #333; /* Title color */
+  margin-bottom: 10px; /* Add space under the title */
+}
+
+.blog__item-excerpt {
+  color: #666; /* Text color for excerpt */
+  margin-bottom: 15px; /* Add space under the excerpt */
+}
+
+.blog__item a {
+  color: #ac5245; /* Link color */
+  text-decoration: none; /* Remove underline for links */
+}
+
+.blog__item a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+.blog__item-excerpt {
+  color: #666; /* Color for the excerpt text */
+  margin-bottom: 10px; /* Add space between the excerpt and "Read more" link */
+  font-size: 14px; /* Adjust font size */
+  line-height: 1.6; /* Improve readability */
+}
+
+// You may also enjoy
+.page__related {
+  margin-top: 40px;
+}
+
+.page__related-title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between related items */
+}
+
+.grid__item {
+  flex: 1 1 calc(50% - 20px); /* Each item takes up half the space (minus margin) */
+  margin-bottom: 20px;
+}
+
+.grid__item-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.grid__item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.grid__item p {
+  color: #666;
+}
+
+//Teaching Item
+.teaching__item {
+  display: flex;
+  align-items: flex-start; /* Aligns the items at the top */
+  gap: 20px; /* Adds spacing between the image and content */
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.teaching__item-title a {
+  color: #ac5245; /* Change this to your desired color */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease;
+}
+
+.teaching__item-title a:hover {
+  color: #ac5245; /* Color when the user hovers over the title */
+}
+
+.teaching__item-thumbnail {
+  max-width: 300px; /* Set a fixed width for the image */
+  flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.teaching__item-thumbnail img {
+  width: 100%;
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.teaching__item-content {
+  flex-grow: 1; /* Ensure it takes the remaining space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Ensure content is aligned at the top */
+  margin-top: 0; /* Remove any extra margin at the top */
+  padding-top: 0; /* Remove any extra padding at the top */
+}
+
+.teaching__item-title {
+  font-size: 18px;
+  color: #ac5245;
+  margin: 0 0 10px 0;
+}
+
+.teaching__item-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.teaching__item-links {
+  margin-top: auto; /* Push the buttons to the bottom if necessary */
+}
+
+.teaching__item-links a {
+  color: white; /* Icon color */
+  background-color: #52adc8; /* Background color */
+  font-size: 1.5rem; /* Size of the icon */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  /* Make it round */
+  display: inline-flex; /* Flexbox for centering icon */
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Width and height to make it circular */
+  height: 40px;
+  border-radius: 50%; /* Fully round */
+
+  /* Add some space between the icons */
+  margin-right: 10px;
+}
+
+.teaching__item-links a:hover {
+  background-color: #ac5245; /* Darker background on hover */
+  color: white; /* Keep text white on hover */
+  text-decoration: none;
+}
+
+.teaching__item-excerpt {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}

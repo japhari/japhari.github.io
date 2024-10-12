@@ -79,7 +79,7 @@ redirect_from:
       <b style="font-size: 130%;">Swahili Developers</b>
       <span style="float:right; font-size:80%; color:#7a7a7a;">Jan 2021 - Present</span>
     </p>
-    Founder
+    Founder - Self Employed
     <div style="color:#7a7a7a">
       Swahili Developer is a mentorship and tutoring program  focused on empowering university students and young professionals in Tanzania with the skills and knowledge necessary to thrive in the tech industry. 
     </div>

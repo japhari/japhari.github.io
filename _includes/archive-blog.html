@@ -1,0 +1,25 @@
+<div class="blog__item">
+  {% if post.image %}
+  <div class="blog__item-image">
+    <img src="{{ post.image }}" alt="{{ post.title }}" class="blog-thumbnail" />
+  </div>
+  {% endif %}
+
+  <div class="blog__item-content">
+    <h2 class="blog__item-title" itemprop="headline">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink"
+        >{{ post.title }}</a
+      >
+    </h2>
+
+    <!-- Add excerpt before "Read more" -->
+    {% if post.excerpt %}
+    <p class="blog__item-excerpt">{{ post.excerpt | markdownify }}</p>
+    {% else %}
+    <p class="blog__item-excerpt">{{ post.content | truncatewords: 30 }}</p>
+    <!-- Fallback to truncated content if no excerpt is provided -->
+    {% endif %}
+
+    <p><a href="{{ base_path }}{{ post.url }}">Read more</a></p>
+  </div>
+</div>

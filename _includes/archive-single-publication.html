@@ -1,0 +1,32 @@
+<div class="publication__item">
+  <div class="publication__item-image">
+    {% if publication.image %}
+    <img src="{{ publication.image }}" alt="{{ publication.title }}" />
+    {% endif %}
+  </div>
+
+  <div class="publication__item-content">
+    <h2
+      style="font-size: 18px; color: rgb(163, 36, 36)"
+      class="publication__item-title"
+      itemprop="headline"
+    >
+      <a href="{{ base_path }}{{ publication.url }}" rel="permalink"
+        >{{ publication.title }}</a
+      >
+    </h2>
+
+    <p>
+      Published in <i>{{ publication.venue }}</i>, {{ publication.date | date:
+      "%Y" }}
+    </p>
+    <p>{{ publication.excerpt }}</p>
+
+    <p>
+      <a href="{{ publication.paperurl }}">Download Paper</a>
+      {% if publication.slidesurl %} |
+      <a href="{{ publication.slidesurl }}">Download Slides</a>
+      {% endif %}
+    </p>
+  </div>
+</div>
