@@ -11,9 +11,6 @@ main:
   - title: "Blog"
     url: /blog/
 
-  - title: "Publications"
-    url: /publications/
-
   - title: "Conferences"
     url: /talks/
 
@@ -22,3 +19,6 @@ main:
 
   - title: "Portfolio"
     url: /portfolio/
+
+  - title: "Publications"
+    url: /publications/
