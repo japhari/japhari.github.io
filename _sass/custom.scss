@@ -297,3 +297,12 @@
     font-size: 1.2rem; /* Adjust icon size */
   }
 }
+
+.archive__item-title a {
+  color: #ac5245; /* Change title color to red */
+  text-decoration: none !important;
+}
+
+.archive__item-title a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+}
