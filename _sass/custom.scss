@@ -210,3 +210,90 @@
   color: #555;
   margin-bottom: 10px;
 }
+
+// Mobile View
+
+/* General desktop layout */
+.publication__item,
+.blog__item,
+.teaching__item {
+  display: flex; /* Flex layout for desktop */
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+/* Images for desktop */
+.publication__item-image img,
+.teaching__item-thumbnail img,
+.blog-thumbnail {
+  width: 300px;
+  height: auto;
+}
+
+/* Mobile layout (below 768px) */
+@media (max-width: 768px) {
+  /* Stack content vertically for smaller screens */
+  .publication__item,
+  .blog__item,
+  .teaching__item {
+    flex-direction: column; /* Stack image and content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  /* Reduce image size for smaller screens */
+  .publication__item-image img,
+  .teaching__item-thumbnail img,
+  .blog-thumbnail {
+    width: 100%; /* Make the image take full width of its container */
+    max-width: 100%; /* Prevent image from being too large */
+  }
+
+  /* Reduce margins and paddings on mobile */
+  .publication__item,
+  .blog__item,
+  .teaching__item {
+    margin-bottom: 20px; /* Reduce bottom margin for items */
+    padding-bottom: 15px;
+  }
+
+  /* Center-align text for mobile */
+  .publication__item-content,
+  .blog__item-content,
+  .teaching__item-content {
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  /* Adjust titles on mobile */
+  .publication__item-title,
+  .blog__item-title,
+  .teaching__item-title {
+    font-size: 1.5rem; /* Reduce title size */
+    margin-bottom: 10px; /* Reduce space between title and content */
+  }
+
+  /* Adjust excerpts for mobile */
+  .publication__item-excerpt,
+  .blog__item-excerpt,
+  .teaching__item-excerpt {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  /* Center links on mobile */
+  .publication__item-links,
+  .teaching__item-links,
+  .blog__item-links {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+  }
+
+  /* Make sure icons fit nicely on mobile */
+  .teaching__item-links a,
+  .publication__item-links a,
+  .blog__item-links a {
+    width: 35px; /* Slightly reduce icon size for mobile */
+    height: 35px;
+    font-size: 1.2rem; /* Adjust icon size */
+  }
+}
