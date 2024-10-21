@@ -1,0 +1,31 @@
+---
+layout: page
+title: "My GitHub Repositories"
+permalink: /repos/
+---
+
+<h2 class="page-title">My GitHub Repositories</h2>
+
+<ul id="repo-list" class="repo-list"></ul>
+
+<script>
+  const username = 'japhari';  // Your GitHub username
+  const repoList = document.getElementById('repo-list');
+
+  fetch(`https://api.github.com/users/${username}/repos`)
+    .then(response => response.json())
+    .then(repos => {
+      repos.forEach(repo => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <div class="repo-item">
+            <h3><a href="${repo.html_url}" target="_blank" class="repo-name">${repo.name}</a></h3>
+            <p class="repo-description">${repo.description || 'No description available'}</p>
+          </div>`;
+        repoList.appendChild(li);
+      });
+    })
+    .catch(error => {
+      console.error('Error fetching repositories:', error);
+    });
+</script>

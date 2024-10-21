@@ -306,3 +306,45 @@
 .archive__item-title a:hover {
   text-decoration: underline; /* Optional: underline on hover */
 }
+
+
+// Repositories 
+.page-title {
+  text-align: center;
+  font-size: 2em;
+  color: #016f8b;
+  margin-bottom: 20px;
+}
+
+.repo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.repo-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.repo-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.repo-name {
+  font-size: 1.5em;
+  color: #016f8b;
+  text-decoration: none;
+}
+
+.repo-name:hover {
+  text-decoration: underline;
+}
+
+.repo-description {
+  font-size: 1.2em;
+  color: #666;
+}
