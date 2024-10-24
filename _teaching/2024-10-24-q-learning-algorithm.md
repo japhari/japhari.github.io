@@ -527,7 +527,5 @@ Q-learning can be applied to optimize inventory levels, reduce holding costs, an
 
 ---
 
-
-
 ## **Conclusion**
 The **Q-learning algorithm** applied to the FrozenLake environment allows the agent to learn an optimal policy by interacting with the environment, updating its Q-table, and balancing exploration and exploitation. Over thousands of episodes, the agent refines its understanding of the environment, improving its performance in reaching the goal. 
