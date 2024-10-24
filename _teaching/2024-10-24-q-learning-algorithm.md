@@ -4,7 +4,7 @@ excerpt: "In this implementation, Q-learning is applied to solve the FrozenLake-
 collection: teaching
 # colab_url: "https://colab.research.google.com/drive/1-T78BMZQg3w9m4iSG2zF154xGAZfcuah"
 github_url: "https://github.com/japhari/reinforcement-learning/blob/main/Q_Q_Learning_Algorithm_for_the_FrozenLake.ipynb"
-thumbnail: "/images/publication/q-learning.png"
+thumbnail: "/images/publication/q-l.png"
 type: "Reinforcement Learning"
 permalink: /teaching/2024-spring-teaching-1
 venue: "PTIT , Department of Computer Science"
