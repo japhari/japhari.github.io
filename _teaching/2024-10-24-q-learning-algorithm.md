@@ -408,9 +408,28 @@ The choice of hyperparameters directly influences the agent's learning process:
 
 In conclusion, tuning these hyperparameters is crucial for efficient learning. In your setup, the parameters are chosen to allow the agent to explore extensively early on (with a high initial exploration rate and slow decay) and learn quickly (with a relatively high learning rate) while considering future rewards (with a high discount rate).
 
+## **Q-Learning Limitations**
+
+1. **Large State and Action Spaces**: Q-learning struggles with environments that have large or continuous state-action spaces, as the Q-table grows exponentially, making it difficult to store and update.
+
+2. **Slow Convergence**: Learning can be slow, especially in complex environments with sparse rewards, requiring many episodes to find an optimal policy.
+
+3. **Lack of Generalization**: Q-learning treats each state as distinct, preventing it from generalizing knowledge across similar states, making learning inefficient in complex environments.
+
+4. **Exploration vs. Exploitation Trade-off**: Balancing exploration (trying new actions) and exploitation (using learned knowledge) is challenging and can lead to suboptimal policies if not properly managed.
+
+5. **Difficulty with Continuous Spaces**: Q-learning is designed for discrete spaces, making it inefficient or unusable in continuous state or action environments without modification.
+
+6. **Hyperparameter Sensitivity**: Q-learning's performance is highly dependent on the proper tuning of hyperparameters like learning rate and exploration decay, which can be difficult to optimize.
+
+7. **Non-Stationary Environments**: Q-learning assumes the environment is static and struggles in environments where conditions change over time.
+
+8. **Limited to Single-Agent Scenarios**: Q-learning is not designed for multi-agent environments, where the actions of one agent affect the outcomes for others.
+
+9. **Lack of Long-Term Planning**: The algorithm focuses on immediate state-action rewards and can fail to account for long-term strategies or delayed rewards effectively. 
+
+Q-learning is effective in small, discrete environments but faces scalability and adaptability challenges in more complex or dynamic scenarios.
+
 
 ## **Conclusion**
-The **Q-learning algorithm** applied to the FrozenLake environment allows the agent to learn an optimal policy by interacting with the environment, updating its Q-table, and balancing exploration and exploitation. Over thousands of episodes, the agent refines its understanding of the environment, improving its performance in reaching the goal. The key components of this algorithm include:
-- **Q-table**: The main data structure storing state-action values.
-- **Exploration-Exploitation**: The balance between trying new actions and using the best-known actions.
-- **Q-value Update**: Using the Bellman equation to improve the agent’s knowledge of the environment.
+The **Q-learning algorithm** applied to the FrozenLake environment allows the agent to learn an optimal policy by interacting with the environment, updating its Q-table, and balancing exploration and exploitation. Over thousands of episodes, the agent refines its understanding of the environment, improving its performance in reaching the goal. 
