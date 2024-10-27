@@ -7,15 +7,45 @@ layout: compress
 <!DOCTYPE html>
 <html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
   <head>
-    {% include head.html %} {% include head/custom.html %}
+    {% include head.html %}
+    {% include head/custom.html %}
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics-compat.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+          apiKey: "AIzaSyBBIrHjUwrCpH4GJ3q8w3S4r0gr709UtTg",
+          authDomain: "analytics-56704.firebaseapp.com",
+          databaseURL: "https://analytics-56704-default-rtdb.firebaseio.com",
+          projectId: "analytics-56704",
+          storageBucket: "analytics-56704.appspot.com",
+          messagingSenderId: "864506396879",
+          appId: "1:864506396879:web:492993438c5c30546ab7ba",
+          measurementId: "G-E2RJZCM30Y"
+      };
+
+      // Initialize Firebase
+      console.log("Initializing Firebase...");
+      const app = firebase.initializeApp(firebaseConfig);
+      const analytics = firebase.analytics();
+      const database = firebase.database();
+      console.log("Firebase initialized successfully.");
+    </script>
   </head>
 
   <body>
-    {% include browser-upgrade.html %} {% include masthead.html %} {{ content }}
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+    {{ content }}
 
     <div class="page__footer">
       <footer>
-        {% include footer/custom.html %} {% include footer.html %}
+        {% include footer/custom.html %}
+        {% include footer.html %}
       </footer>
     </div>
 

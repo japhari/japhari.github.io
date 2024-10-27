@@ -1,15 +1,21 @@
 ---
-title: "Paper Title Number 1"
+title: "Setting Up a 2-Node Hadoop Cluster and Kafka for
+Distributed Data Collection and Web Log Analysis"
 collection: publications
 category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: "This paper is about the number 1. The number 2 is left for future work."
-date: 2009-10-01
-venue: "Journal 1"
-slidesurl: "http://academicpages.github.io/files/slides1.pdf"
-paperurl: "http://academicpages.github.io/files/paper1.pdf"
-citation: "Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1)."
+permalink: /publication/weblog
+excerpt: "This report outlines the steps to set up a 2-node Hadoop cluster and Kafka for collecting
+distributed data from multiple nodes, such as web logs."
+date: 2024-06-01
+venue: "PTIT"
+slidesurl: "http://japhari.github.io/files/weblog.pdf"
+paperurl: "http://japhari.github.io/files/weblog.pdf"
+citation: ""
 image: "/images/publication/test.png"
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+This report outlines the steps to set up a 2-node Hadoop cluster and Kafka for collecting
+distributed data from multiple nodes, such as web logs. Additionally, it provides a guide to
+writing a MapReduce code for web log analysis and setting up a dashboard for data
+visualization. This setup ensures efficient data processing and real-time insights into the
+collected data.

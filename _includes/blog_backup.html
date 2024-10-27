@@ -1,0 +1,47 @@
+<div class="blog__item">
+    {% if post.image %}
+    <div class="blog__item-image">
+      <img src="{{ post.image }}" alt="{{ post.title }}" class="blog-thumbnail" />
+    </div>
+    {% endif %}
+  
+    <div class="blog__item-content">
+      <h2 class="blog__item-title" itemprop="headline">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
+      </h2>
+  
+      {% if post.excerpt %}
+      <p class="blog__item-excerpt">{{ post.excerpt | markdownify }}</p>
+      {% else %}
+      <p class="blog__item-excerpt">{{ post.content | truncatewords: 30 }}</p>
+      {% endif %}
+  
+      <!-- Display view count -->
+      <p id="view-count-{{ post.url | slugify }}">Loading views...</p>
+  
+      <p><a href="{{ base_path }}{{ post.url }}">Read more</a></p>
+    </div>
+  </div>
+  
+  <!-- Firebase view count script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Create a unique key for each blog post using its URL
+      const postKey = '{{ post.url | slugify }}';
+  
+      // Reference Firebase database for this post's view count
+      const postRef = firebase.database().ref('views/' + postKey);
+  
+      // Increment the view count when the page is loaded
+      postRef.transaction(function (currentViews) {
+        return (currentViews || 0) + 1; // Increment view count by 1
+      });
+  
+      // Display the view count on the page
+      postRef.on('value', function (snapshot) {
+        const viewCount = snapshot.val() || 0;
+        document.getElementById('view-count-{{ post.url | slugify }}').innerText = viewCount + ' views';
+      });
+    });
+  </script>
+  
