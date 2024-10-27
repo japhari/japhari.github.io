@@ -10,10 +10,12 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title }}</a>
       </h2>
   
+      <!-- Add excerpt before "Read more" -->
       {% if post.excerpt %}
       <p class="blog__item-excerpt">{{ post.excerpt | markdownify }}</p>
       {% else %}
       <p class="blog__item-excerpt">{{ post.content | truncatewords: 30 }}</p>
+      <!-- Fallback to truncated content if no excerpt is provided -->
       {% endif %}
   
       <!-- Display view count -->
@@ -24,24 +26,53 @@
   </div>
   
   <!-- Firebase view count script -->
+  <!-- Firebase view count script -->
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+     // console.log("Firebase script loaded");
+      
       // Create a unique key for each blog post using its URL
       const postKey = '{{ post.url | slugify }}';
+     // console.log("Post Key: ", postKey);
   
-      // Reference Firebase database for this post's view count
-      const postRef = firebase.database().ref('views/' + postKey);
+      // Check if the view has already been counted in this session
+      const viewedPosts = JSON.parse(localStorage.getItem('viewedPosts')) || [];
   
-      // Increment the view count when the page is loaded
-      postRef.transaction(function (currentViews) {
-        return (currentViews || 0) + 1; // Increment view count by 1
-      });
+      if (!viewedPosts.includes(postKey)) {
+        // Reference Firebase database for this post's view count
+        const postRef = firebase.database().ref('views/' + postKey);
+        //console.log("Firebase Reference: ", postRef.toString());
+  
+        // Increment the view count when the page is loaded
+        postRef.transaction(function (currentViews) {
+         // console.log("Current Views Before Increment: ", currentViews);
+          return (currentViews || 0) + 1; // Increment view count by 1
+        }).then(() => {
+          //console.log("View count incremented successfully");
+  
+          // Mark this post as viewed in local storage
+          viewedPosts.push(postKey);
+          localStorage.setItem('viewedPosts', JSON.stringify(viewedPosts));
+        }).catch((error) => {
+          //console.error("Error incrementing view count: ", error);
+        });
+      } else {
+        //console.log("View already counted for this session.");
+      }
   
       // Display the view count on the page
+      const postRef = firebase.database().ref('views/' + postKey);
       postRef.on('value', function (snapshot) {
         const viewCount = snapshot.val() || 0;
-        document.getElementById('view-count-{{ post.url | slugify }}').innerText = viewCount + ' views';
+        //console.log("View Count Retrieved: ", viewCount);
+        const viewElement = document.getElementById('view-count-{{ post.url | slugify }}');
+        if (viewElement) {
+          viewElement.innerText = viewCount + ' views';
+        } else {
+         // console.error("View element not found.");
+        }
       });
     });
   </script>
+  
   
