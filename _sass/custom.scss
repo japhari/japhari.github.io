@@ -148,11 +148,19 @@
   flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
+// .teaching__item-thumbnail img {
+//   width: 100%;
+//   height: auto; /* Keep the aspect ratio */
+//   border-radius: 8px;
+//   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// }
+
 .teaching__item-thumbnail img {
   width: 100%;
   height: auto; /* Keep the aspect ratio */
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners */
+  object-fit: cover; /* Ensures the image fits properly within its container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 .teaching__item-content {
