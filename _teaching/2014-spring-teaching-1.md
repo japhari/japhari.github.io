@@ -1,5 +1,5 @@
 ---
-title: "Sentiment analysis using HuggingFace’s Transformers"
+title: "How to create and use Transformer models with HuggingFace’s AutoModel"
 excerpt: "This guide provides a step-by-step explanation of how to perform sentiment analysis using HuggingFace’s Transformers library. It begins with preprocessing, where raw text is tokenized into numerical input for the model"
 collection: teaching
 # colab_url: "https://colab.research.google.com/drive/1-T78BMZQg3w9m4iSG2zF154xGAZfcuah"
